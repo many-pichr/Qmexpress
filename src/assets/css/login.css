@@ -1,0 +1,12 @@
+
+.sms-container{
+	/*display: none ;*/
+	position: absolute !important;
+	/*z-index: 1 !important;*/
+	margin-top: 50px !important;
+	width: 100% !important;
+
+}
+.CardH{
+	height: 114px !important;
+}
