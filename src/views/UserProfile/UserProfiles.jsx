@@ -25,7 +25,7 @@ class Login extends React.Component {
   }
 
     render() {
-        alert(this.state.link);
+        
   return (
     <div>
       <Grid container>

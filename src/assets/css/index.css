@@ -1,9 +1,26 @@
 .CustomDrawer{
-	
-	width: 99% !important;
+	width: 100% !important;
+	overflow:hidden !important;
 }
-.SidebarNew div div div{
-	
-	width: 0px !important;
+.SidebarNew div{
+	left: -100px !important;
+	width: 100px !important;
+	/*transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1) !important;*/
+}
+.SidebarTrn div{
 	transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1) !important;
+	overflow:hidden !important;
+	/* width: 250px; */
+}
+.SidebarTrn div div ul a div {
+	/* border: solid green 2px; */
+	/* width: 250px; */
+}
+.Pro-Image{
+	width:40px !important;
+	border-radius: 50%;
+	border:2px solid white;
+}
+body {
+    overflow:hidden !important;
 }

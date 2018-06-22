@@ -140,7 +140,7 @@ class HeaderLinks extends React.Component {
         
                         <img
                           src={profileImage}
-                          className="jss609 jss607"
+                          className="Pro-Image"
                           alt="profile"
                         />
           

@@ -5,7 +5,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import { withStyles } from "material-ui";
-
+import navbarsStyle from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx";
 
 import { Header, Footer, Sidebar } from "components";
 
@@ -61,7 +61,7 @@ class App extends React.Component {
     return (
       <div className={classes.wrapper}>
         <Sidebar 
-          className={this.state.SidebarNew}
+          className={this.state.SidebarNew+" SidebarTrn"}
           routes={dashboardRoutes}
           logoText={"Creative Tim"}
           logo={logo}

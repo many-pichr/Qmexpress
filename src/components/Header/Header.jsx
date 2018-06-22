@@ -37,14 +37,15 @@ function Header({ ...props }) {
 
         <div className={classes.flex}>
           {/* Here we create navbar brand, based on route name */}
-               <IconButton
-            className={classes.appResponsive}
+          <Hidden smDown>
+            <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={props.handleDrawerTo}
           >
             <Menu />
           </IconButton>
+          </Hidden>
           <Button href="#" className={classes.title}>
             {makeBrand()}
           </Button>

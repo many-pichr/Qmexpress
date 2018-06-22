@@ -1,6 +1,7 @@
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfiles.jsx";
 import TableList from "views/TableList/TableList.jsx";
+import ShipmentList from "views/Shipment/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
@@ -9,9 +10,11 @@ import Logins from "layouts/Login/index.jsx";
 import {
   Dashboard,
   Person,
+  Add,
+  Input,
   ContentPaste,
   LibraryBooks,
-  BubbleChart,
+  People,
   LocationOn,
   Notifications
 } from "@material-ui/icons";
@@ -23,6 +26,27 @@ const dashboardRoutes = [
     navbarName: "Material Dashboard",
     icon: Dashboard,
     component: DashboardPage
+  },
+  {
+    path: "/add-shipment",
+    sidebarName: "Add Shipment",
+    navbarName: "Add Shipment",
+    icon: Add,
+    component: UserProfile
+  },
+  {
+    path: "/shipment",
+    sidebarName: "Shipment",
+    navbarName: "Profile",
+    icon: Input,
+    component: ShipmentList
+  },
+  {
+    path: "/users",
+    sidebarName: "User Profile",
+    navbarName: "Profile",
+    icon: Person,
+    component: UserProfile
   },
   {
     path: "/users",
@@ -47,9 +71,9 @@ const dashboardRoutes = [
   },
   {
     path: "/icons",
-    sidebarName: "Icons",
-    navbarName: "Icons",
-    icon: BubbleChart,
+    sidebarName: "Users",
+    navbarName: "Users",
+    icon: People,
     component: Icons
   },
   {
@@ -58,6 +82,20 @@ const dashboardRoutes = [
     navbarName: "Map",
     icon: LocationOn,
     component: Maps
+  },
+  {
+    path: "/notifications",
+    sidebarName: "Notifications",
+    navbarName: "Notifications",
+    icon: Notifications,
+    component: NotificationsPage
+  },
+  {
+    path: "/notifications",
+    sidebarName: "Notifications",
+    navbarName: "Notifications",
+    icon: Notifications,
+    component: NotificationsPage
   },
   {
     path: "/notifications",
