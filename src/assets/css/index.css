@@ -24,3 +24,7 @@
 body {
     overflow:hidden !important;
 }
+.StatsCard-cardHeader-281{
+	margin: 7px 15px 0 !important;
+    padding: 5px !important;
+}

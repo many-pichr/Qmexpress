@@ -63,7 +63,7 @@ class App extends React.Component {
         <Sidebar 
           className={this.state.SidebarNew+" SidebarTrn"}
           routes={dashboardRoutes}
-          logoText={"Creative Tim"}
+          logoText={"QM Express"}
           logo={logo}
           image={image}
           handleDrawerToggle={this.handleDrawerToggle}

@@ -1,105 +1,4 @@
-// import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import fire from './config/Fire';
-// import { Grid, InputLabel } from "material-ui";
-// import {
-//   ProfileCard,DialogActions,
-//   RegularCard,DialogContent,
-//   Button,Dialog,DialogTitle,
-//   CustomInput,DialogContentText,
-//   ItemGrid
-// } from "compoments-ui";
-// import "assets/css/login.css";
 
-// import avatar from "assets/img/faces/marc.jpg";
-// class Login extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.login = this.login.bind(this);
-//     this.handleChange = this.handleChange.bind(this);
-//     this.signup = this.signup.bind(this);
-//     this.state = {
-//       email: '',
-//       password: ''
-//     };
-//   }
-
-//   handleChange(e) {
-//     this.setState({ [e.target.name]: e.target.value });
-//   }
-
-//   login(e) {
-//     e.preventDefault();
-//     fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-//     }).catch((error) => {
-//         console.log(error);
-//       });
-//   }
-
-//   signup(e){
-//     e.preventDefault();
-//     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-//     }).then((u)=>{console.log(u)})
-//     .catch((error) => {
-//         console.log(error);
-//       })
-//   }
-//   render() {
-   
-//     return (
-//       <div className="login-grid" >
-//       <Grid container>
-//       <ItemGrid xs={12} sm={12} md={4}></ItemGrid>
-//         <ItemGrid xs={12} sm={12} md={4}>
-//           <ProfileCard
-//             avatar={avatar}
-//             subtitle="Login"
-//             title="Alec Thompson"
-//             content={
-//               <ItemGrid xs={12} sm={12} md={12} className="Login-fcont">
-//                     <CustomInput
-//                       labelText="Username"
-//                       value={this.state.email} 
-//                       name="email" 
-//                       onChange={this.handleChange}
-//                       id="username"
-//                       formControlProps={{
-//                         fullWidth: true
-//                       }}
-//                     />
-                  
-                  
-//                     <CustomInput
-//                       labelText="Password"
-//                       id="pwd"
-//                       value={this.state.password} 
-//                       onChange={this.handleChange}
-//                       type="password"
-//                       name="password"
-//                       formControlProps={{
-//                         fullWidth: true
-//                       }}
-//                     />
-//                   </ItemGrid>
-//             }
-
-//             footer={
-             
-//               <Button color="primary" round onClick={this.login}>
-//                 Login
-//               </Button>
-//             }
-//           />
-           
-                  
-//         </ItemGrid>
-//         <ItemGrid xs={12} sm={12} md={4}></ItemGrid>
-//         </Grid>
-//       </div>
-//     );
-//   }
-// }
-// export default Login;
 import { Link } from 'react-router-dom';
 import fire from './config/Fire';
 import React from "react";
@@ -110,10 +9,7 @@ import InputAdornment from "material-ui/Input/InputAdornment";
 import Email from "@material-ui/icons/Email";
 import LockOutline from "@material-ui/icons/LockOutline";
 import People from "@material-ui/icons/People";
-// core components-ui
-// import Header from "components-ui/Header/Header.jsx";
-// import HeaderLinks from "components-ui/Header/HeaderLinks.jsx";
-// import Footer from "components-ui/Footer/Footer.jsx";
+
 import InfoOutline from "@material-ui/icons/InfoOutline";
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
@@ -225,44 +121,13 @@ class LoginPage extends React.Component {
                 /> :null}
 				     </div>
                     <CardHeader color="primary" className={classes.cardHeader+' CardH'}>
-                      <h4>Login</h4>
+                      <h3>Login</h3>
+                      <h5>QM Express</h5>
                       <div className={classes.socialLine}>
-                        <IconButton
-                          href="#pablo"
-                          
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i
-                            className={classes.socialIcons + " fab fa-twitter"}
-                          />
-                        </IconButton>
-                        <IconButton
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i
-                            className={classes.socialIcons + " fab fa-facebook"}
-                          />
-                        </IconButton>
-                        <IconButton
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i
-                            className={
-                              classes.socialIcons + " fab fa-google-plus-g"
-                            }
-                          />
-                        </IconButton>
+                        
                       </div>
                     </CardHeader>
-                    <p className={classes.divider}>Or Be Classical</p>
+                    <p className={classes.divider}></p>
                     <CardBody>
         
                       <CustomInput
