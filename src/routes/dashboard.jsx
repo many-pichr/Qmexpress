@@ -1,5 +1,6 @@
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfiles.jsx";
+import DriverList from "views/Driver/List.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import ShipmentList from "views/Shipment/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
@@ -28,30 +29,37 @@ const dashboardRoutes = [
     component: DashboardPage
   },
   {
-    path: "/add-shipment",
-    sidebarName: "Add Shipment",
-    navbarName: "Add Shipment",
+    path: "/shipment",
+    sidebarName: "Manage Shipment",
+    navbarName: "Shipment",
     icon: Add,
     component: UserProfile
   },
   {
-    path: "/shipment",
-    sidebarName: "Shipment",
-    navbarName: "Profile",
+    path: "/trucking",
+    sidebarName: "Manage Trucking",
+    navbarName: "Manage Trucking",
     icon: Input,
     component: ShipmentList
   },
   {
-    path: "/users",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    path: "/driver/list",
+    sidebarName: "Drivers",
+    navbarName: "Driver List",
+    icon: Person,
+    component: DriverList
+  },
+  {
+    path: "/customers",
+    sidebarName: "Customers",
+    navbarName: "Customer List",
     icon: Person,
     component: UserProfile
   },
   {
-    path: "/users",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    path: "/product",
+    sidebarName: "Products",
+    navbarName: "Product List",
     icon: Person,
     component: UserProfile
   },

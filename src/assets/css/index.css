@@ -9,7 +9,7 @@
 }
 .SidebarTrn div{
 	transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1) !important;
-	overflow:hidden !important;
+	overflow:auto !important;
 	/* width: 250px; */
 }
 .SidebarTrn div div ul a div {
@@ -27,4 +27,8 @@ body {
 .StatsCard-cardHeader-281{
 	margin: 7px 15px 0 !important;
     padding: 5px !important;
+}
+
+.MuiListItemText-root-376{
+	padding: 0 0px !important;
 }
